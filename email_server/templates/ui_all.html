@@ -138,7 +138,7 @@
 
   <script>
     // 🔴 Hardcoded en localhost
-    const EMAIL_API = "http://localhost:8000";
+    const EMAIL_API = window.location.origin;
     const LLM_API   = "http://localhost:8001/prompt";
     
     async function loadEmails() {
