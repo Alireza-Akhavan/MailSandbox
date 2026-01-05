@@ -45,7 +45,7 @@ The email system is backed by FastAPI and offers these endpoints:
 Paste this into the notebook and watch the tools fire:
 
 ```text
-Check for unread emails from boss@email.com,
+Check for unread emails from manager@company.ir,
 mark them as read,
 and send a polite follow-up.
 ```
