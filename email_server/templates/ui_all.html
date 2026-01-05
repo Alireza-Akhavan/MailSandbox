@@ -137,9 +137,9 @@
   </div>
 
   <script>
-    // 🔴 Hardcoded en localhost
-    const EMAIL_API = window.location.origin;
-    const LLM_API   = "http://localhost:8001/prompt";
+
+    const EMAIL_API = "{{ UI_EMAIL_SERVER }}";
+    const LLM_API   = "{{ UI_LLM_SERVER }}/prompt";
     
     async function loadEmails() {
       try {

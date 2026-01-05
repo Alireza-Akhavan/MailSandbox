@@ -4,7 +4,7 @@ import os
 
 load_dotenv()
 
-BASE_URL = os.getenv("M3_EMAIL_SERVER_API_URL")
+BASE_URL = os.getenv("EMAIL_SERVER_API_URL")
 
 
 def list_all_emails() -> list:

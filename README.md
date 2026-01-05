@@ -4,19 +4,17 @@
 **In one terminal**, start the email API server:
 
 ```bash
-cd email_server
-uvicorn email_service:app --timeout-keep-alive 1200
+uvicorn email_server.email_service:app --timeout-keep-alive 1200
 ```
 
 📍 This runs on: `http://localhost:8000`
 
-It loads a mock inbox with 5 sample emails (all unread).
+It loads a mock inbox with sample emails.
 
 **In another terminal**, start the LLM agent server:
 
 ```bash
-cd email_server
-uvicorn llm_service:app --port 8001 --timeout-keep-alive 1200
+uvicorn email_server.llm_service:app --port 8001 --timeout-keep-alive 1200
 ```
 
 📍 This runs on: `http://localhost:8001/prompt`
