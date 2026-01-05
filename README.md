@@ -9,7 +9,7 @@ uvicorn email_server.email_service:app --timeout-keep-alive 1200
 
 📍 This runs on: `http://localhost:8000`
 
-It loads a mock inbox with sample emails.
+It loads a mock inbox with sample emails from emails.db.
 
 **In another terminal**, start the LLM agent server:
 
@@ -19,7 +19,7 @@ uvicorn email_server.llm_service:app --port 8001 --timeout-keep-alive 1200
 
 📍 This runs on: `http://localhost:8001/prompt`
 
-**To run the frontend UI**, simply open `ui_all.html` in a browser, otherwise, go to next step to work with the notebook.
+**To run the frontend UI**, simply open `http://localhost:8000/` in a browser.
 
 ## 📡 Backend API Reference
 
@@ -66,3 +66,15 @@ This project is designed for learners. You’ll:
 - Watch LLMs call functions, not just generate text
 - Understand how reasoning and actions can be chained
 - Use `aisuite` to connect prompts to tool execution
+
+
+---
+
+## 📚 Attribution
+
+This project is adapted from **Module 3** of the course:  
+**[Agentic AI](https://learn.deeplearning.ai/courses/agentic-ai)** by DeepLearning.AI
+
+The code has been modified for educational purposes.
+
+---

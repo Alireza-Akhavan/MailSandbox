@@ -189,7 +189,7 @@ def reset_database():
         # Reload sample emails
         now = datetime.utcnow()
         samples = [
-            Email(sender="boss@email.com", recipient="you@email.com",
+            Email(sender="manager@company.ir", recipient="you@email.com",
                   subject="Quarterly Report", body="Please finalize the report ASAP.",
                   timestamp=now, read=False),
             Email(sender="alice@work.com", recipient="you@email.com",
@@ -204,7 +204,7 @@ def reset_database():
             Email(sender="eric@work.com", recipient="you@email.com",
                   subject="Happy Hour", body="We're planning drinks this Friday!",
                   timestamp=now, read=False),
-            Email(sender="you@mail.com", recipient="boss@email.com",
+            Email(sender="you@mail.com", recipient="manager@company.ir",
                   subject="Days off", body="Can I get some days off the coming week?",
                   timestamp=now, read=False),
         ]
